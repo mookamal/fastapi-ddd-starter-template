@@ -1,0 +1,71 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code settings
+.vscode/
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy cache
+.mypy_cache/
+
+# Pyre type checker
+.pyre/
+
+# Pydantic compiled models
+*.pyd
+
+# Alembic
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+
+# SQLite or other local DB files
+*.sqlite3
+*.db
+
+# Logs and local dev files
+*.log
+*.env
+.env.*
+*.bak
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# FastAPI OpenAPI docs cache
+openapi.json
+
+# Docker
+*.pid
+*.tar
+docker-compose.override.yml
+**/__pycache__/
+**/*.pyc
+
+# IDEs
+.idea/
+*.swp
+*~
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Local database volumes
+pgdata/
