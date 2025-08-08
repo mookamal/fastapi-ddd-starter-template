@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timezone, timedelta
 from typing import Optional, Dict, Any
 from jose import JWTError, jwt
 from app.config.settings import settings
@@ -12,7 +12,7 @@ class JWTManager:
     
     def create_access_token(self, data: Dict[str, Any]) -> str:
         to_encode = data.copy()
-        expire = datetime.now(datetime.timezone.utc) + timedelta(minutes=self.access_token_expire_minutes)
+        expire = datetime.now(timezone.utc) + timedelta(minutes=self.access_token_expire_minutes)
         to_encode.update({"exp": expire})
         encoded_jwt = jwt.encode(to_encode, self.secret_key, algorithm=self.algorithm)
         return encoded_jwt
