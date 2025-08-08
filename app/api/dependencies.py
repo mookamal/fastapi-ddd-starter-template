@@ -3,7 +3,7 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.infrastructure.database.connection import get_db_session
 from app.infrastructure.repositories.user_repository_impl import UserRepositoryImpl
-from app.domain.services.auth_service import AuthService
+from app.domain.user.service import AuthService
 from app.application.services.user_service import UserService
 from app.infrastructure.security.password import PasswordManager
 from app.infrastructure.security.auth import JWTManager
