@@ -86,7 +86,7 @@ alembic upgrade head
 ### 5. Start the development server
 
 ```bash
-uvicorn app.main:app --reload
+python -m app.main
 ```
 
 ---
@@ -141,7 +141,7 @@ app/
 
 ## 🪪 License
 
-MIT License © [Your Name or Organization]
+MIT License © [Mohamed Kamal or Organization]
 
 ---
 
