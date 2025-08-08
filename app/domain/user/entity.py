@@ -7,7 +7,7 @@ import uuid
 @dataclass
 class User:
     id: Optional[uuid.UUID] = None
-    username: str = ""
+    name: str = ""
     email: str = ""
     password_hash: str = ""
     is_active: bool = True
